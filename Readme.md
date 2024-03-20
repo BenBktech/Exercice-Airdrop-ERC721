@@ -22,9 +22,11 @@ This project implements a standard ERC721 token with an additional whitelisting 
 - @openzeppelin/merkle-tree
 - Chai for testing
 
-## Installation
+# Installation
 
 To get started with this project, follow the steps below:
+
+## Backend
 
 ### 1. Clone this repository.
 
@@ -59,16 +61,22 @@ This will execute all tests defined in the test/ folder.
 To deploy this contract to a network (e.g., Sepolia testnet), configure your hardhat.config.js with network information and run:
 
 ```bash
-npx hardhat run scripts/deploy.js --network sepolia
+yarn hardhat run scripts/deploy.js --network sepolia
 ```
 
 Make sure to replace "sepolia" with the name of your chosen network configured in hardhat.config.js.
 
-### 6. Contribution
+## Frontend
 
-Contributions are welcome! 
+### 1. Install dependencies.
 
+```bash
+npm install
+```
 
-### 7. License
+### 2. Launch the DApp.
 
-Distributed under the MIT License. See LICENSE for more information.
+```bash
+npm run dev
+```
+
